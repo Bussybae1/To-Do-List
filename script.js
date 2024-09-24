@@ -29,32 +29,6 @@ class Todolist {
         localStorage.setItem('tasks', JSON.stringify(this.taskArr)); // Update localStorage
     }
 
-    /*displayTask() {
-        taskDisplay.innerHTML = ''; // Clear previous content
-        this.taskArr.forEach((task, index) => {
-            taskDisplay.innerHTML += `<tr>
-                <td>${index + 1}.</td>
-                <td>${task.description}.</td>
-                <td><button type="button" class="btn btn-primary" onclick="undoTask(${index})">Undo</button></td>
-                <td><button type="button" class="btn btn-danger" onclick="removeTask(${index})">Remove Task</button></td>
-            </tr>`
-        });
-    }*/
-        // displayTask() {
-        //     taskDisplay.innerHTML = ''; // Clear previous content
-        //     this.taskArr.forEach((task, index) => {
-        //         const taskStyle = task.isCompleted ? 'text-decoration: line-through; color: gray;' : ''; // Apply style if completed
-        //         taskDisplay.innerHTML += `
-        //         <tr style="${taskStyle}">
-        //             <td>${index + 1}.</td>
-        //             <td>${task.description}</td>
-        //             <td><button type="button" class="btn btn-primary" onclick="toggleCompletion(${index})">
-        //                 ${task.isCompleted ? 'toggleCompletion' : 'Complete'}
-        //             </button></td> 
-        //             <td><button type="button" class="btn btn-danger" onclick="removeTask(${index})">Remove Task</button></td>                </tr>`;
-        //     });
-        // }
-
         displayTask() {
             taskDisplay.innerHTML = ''; // Clear previous content
             this.taskArr.forEach((task, index) => {
