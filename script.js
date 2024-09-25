@@ -40,7 +40,7 @@ class Todolist {
                     <td><button type="button" class="btn btn-primary" onclick="toggleCompletion(${index})">
                         ${task.isCompleted ? 'Undo' : 'Complete'}
                     </button></td> 
-                    <td><button type="button" class="btn btn-danger" onclick="removeTask(${index})">Remove Task</button></td>
+                    <td><button type="button" class="btn btn-danger" onclick="removeTask(${index})">Remove</button></td>
                 </tr>`;
             });
         }
